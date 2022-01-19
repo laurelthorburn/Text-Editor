@@ -1,5 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// Require the GenerateSW class of the WorkBoxPlugin 
+const WorkboxPlugin = require('workbox-webpack-plugin');
+
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
@@ -27,10 +32,10 @@ module.exports = () => {
 
     module: {
       rules: [
-        // {
-        //   test: /\.css$/i,
-        //   use: ["style-loader", 'css-loader'],
-        // },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", 'css-loader'],
+        },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
