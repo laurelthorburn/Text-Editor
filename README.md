@@ -129,7 +129,4 @@ No tests at this time
 
   <a name="creditsection"></a>
 ## Resources/Credit
-* https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax
-* https://stackoverflow.com/questions/24964914/can-a-mongo-model-self-reference
-* https://stackoverflow.com/questions/24557580/how-to-return-the-objectid-or-id-of-an-document-in-mongodb-and-error-in-need
-* https://stackoverflow.com/questions/50602037/difference-between-findoneanddelete-and-findoneandremove
+* None yet, woah...
