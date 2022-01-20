@@ -58,14 +58,13 @@ THEN I should have my static assets pre cached upon loading along with subsequen
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 
-
 ```
 
 <a name="installsection"></a>
 ## Installation
 * Clone the repository using:
 ```
-git clone https://github.com/laurelthorburn/Social-Network-API.git
+git clone https://github.com/laurelthorburn/Text-Editor.git
 ```
 * Ensure you are in the current working directory
 * Install dependencies by opening the terminal (ctrl + j on windows) and running:
@@ -115,9 +114,6 @@ No tests at this time
 
   Questions/comments/concerns? Please send an email to codinglaurel@gmail.com
   
-  <a name="videosection"></a>
-## Video
-  View video: https://drive.google.com/file/d/15jGrsoLFN71YA05zIln0W4iWwZNylVyL/view?usp=sharing
 
   <a name="picsection"></a>
   ## Screenshots
@@ -127,8 +123,9 @@ No tests at this time
 
   <a name="linksection"></a>
   ## Links
-  
-  Github Site: https://github.com/laurelthorburn/Social-Network-API
+
+  Heroku Site: https://laurels-text-editor.herokuapp.com/
+  Github Site: https://github.com/laurelthorburn/Text-Editor
 
   <a name="creditsection"></a>
 ## Resources/Credit
