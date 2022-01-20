@@ -23,9 +23,9 @@ Welcome to J.A.T.E, or "just another text editor".  JATE is a text editor that r
 <a name="usersection"></a>
 ## User Story
 ```
-AS A social media startup
-I WANT an API for my social network that uses a NoSQL database
-SO THAT my website can handle large amounts of unstructured data
+AS A developer
+I WANT to create notes or code snippets with or without an internet connection
+SO THAT I can reliably retrieve them for later use
 
 ```
 
