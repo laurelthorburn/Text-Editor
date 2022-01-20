@@ -1,10 +1,18 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const { CacheFirst } = require('workbox-strategies');
+// const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+// const { CacheFirst } = require('workbox-strategies');
+// const { registerRoute } = require('workbox-routing');
+// const { CacheableResponsePlugin } = require('workbox-cacheable-response');
+// const { ExpirationPlugin } = require('workbox-expiration');
+// const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
+
+// Caching js and css requires workbox-strategies to be installed
+// To actually respond to requests with a cached response, we need to use a strategy called StaleWhileRevalidate
+// This strategy will first check the cache for a response, and if it finds one, it will return it.
+
+const { StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
-const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
-
 
 
 // The precacheAndRoute() method takes an array of URLs to precache. The self._WB_MANIFEST is an array that contains the list of URLs to precache.
