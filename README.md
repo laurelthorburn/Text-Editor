@@ -71,9 +71,10 @@ git clone https://github.com/laurelthorburn/Text-Editor.git
 ```
 npm install || npm i
 ```
-* Run the project by typing the following in the terminal:
+* Run the project by typing the following in the terminal in order:
 ```
-npm run start || npm run dev (if nodemon is installed)
+npm run build 
+npm run start
 ```
 
 <a name="licensesection"></a>
@@ -117,9 +118,9 @@ No tests at this time
 
   <a name="picsection"></a>
   ## Screenshots
-  ![Screenshot of Find One User by ID](./media/Screenshot1.png)
-  ![Screenshot of Update a User](./media/Screenshot2.png)
-  ![Screenshot of Add a Friend](./media/Screenshot3.png)
+  ![Screenshot of Text Editor Main Screen](./media/Screenshot1.png)
+  ![Screenshot of Text Editor with code (console log Hello)](./media/Screenshot2.png)
+  ![Screenshot of Text Editor with install button pressed showed code can be downloaded](./media/Screenshot3.png)
 
   <a name="linksection"></a>
   ## Links
@@ -130,4 +131,5 @@ No tests at this time
 
   <a name="creditsection"></a>
 ## Resources/Credit
-* None yet, woah...
+* Master coder and TA, Samuel Fox, who found the missing space and made magic happen
+
