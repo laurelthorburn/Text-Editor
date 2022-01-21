@@ -69,7 +69,14 @@ export const getDb = async () => {
   // Get confirmation of the request.
   const result = await request;
   console.log('result.value', result.value);
-  return result.value;
+
+  if(result.value != undefined){
+    return result.value;
+  } else {
+    console.log("dang, sorry man");
+    return;
+  }
+ 
 };
 
 // Start the database
