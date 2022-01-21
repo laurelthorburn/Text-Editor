@@ -23,7 +23,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Webpack Plugin',
+        title: 'i HATE JATE',
       }),
            
       // Injects our custom service worker
@@ -52,7 +52,7 @@ module.exports = () => {
               ],
             }),
 // do i need this line??
-      new WorkboxPlugin.GenerateSW()
+      // new WorkboxPlugin.GenerateSW()
     ],
 
     module: {
@@ -63,12 +63,13 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
                     // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },

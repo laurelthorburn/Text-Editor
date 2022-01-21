@@ -125,6 +125,7 @@ No tests at this time
   ## Links
 
   Heroku Site: https://laurels-text-editor.herokuapp.com/
+  
   Github Site: https://github.com/laurelthorburn/Text-Editor
 
   <a name="creditsection"></a>
