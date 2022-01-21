@@ -36,7 +36,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 // The cache first strategy is often the best choice for images because it saves bandwidth and improves performance.
 registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
-  newStaleWhileRevalidate({
+  new StaleWhileRevalidate({
     cacheName: 'asset-cache',
     plugins: [
       new CacheableResponsePlugin({

@@ -24,7 +24,7 @@ module.exports = () => {
         template: './index.html',
         title: 'i HATE JATE',
       }),
-           
+      // new WorkboxPlugin.GenerateSW(),     
       // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
