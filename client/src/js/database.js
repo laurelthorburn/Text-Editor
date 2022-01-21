@@ -1,8 +1,7 @@
 import { openDB } from 'idb';
 
 const initdb = async () =>
-// We are creating a new database named 'contact' which will be using version 1 of the database.
-
+// We are creating a new database named 'jate' which will be using version 1 of the database.
   openDB('jate', 1, {
     // Add our database schema if it has not already been initialized.
     upgrade(db) {
@@ -25,21 +24,21 @@ export const putDb = async (content)  => {
   console.log('Update the database, what a giver');
 
   // Create a connection to the database database and version we want to use.
-  const contactDb = await openDB('contact', 1);
+  const jateDb = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = contactDb.transaction('contact', 'readwrite');
+  const tx = jateDb.transaction('jate', 'readwrite');
 
   // Open up the desired object store.
-  const store = tx.objectStore('contact');
+  const store = tx.objectStore('jate');
 
   // Use the .add() method on the store and pass in the content.
   //IDK IF I DID THIS PART RIGHT!!!!!!!!!!!!
-  const request = store.add({ content: content });
+  const request = store.put({ id:1, value: content });
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('🚀 - data saved to the database', result);
+  console.log('🚀 - data saved to the database', result.vale);
 
   //can i catch the error here?
   // if (error) {
@@ -55,21 +54,22 @@ export const getDb = async () => {
   console.log('GET from the database, so greedy');
 
   // Create a connection to the database database and version we want to use.
-  const contactDb = await openDB('contact', 1);
+  const jateDb = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = contactDb.transaction('contact', 'readonly');
+  const tx = jateDb.transaction('jate', 'readonly');
 
   // Open up the desired object store.
-  const store = tx.objectStore('contact');
+  const store = tx.objectStore('jate');
 
   // Use the .getAll() method to get all data in the database.
-  const request = store.getAll();
+  //why not getAll()
+  const request = store.get(1);
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('result.value', result);
-  return result;
+  console.log('result.value', result.value);
+  return result.value;
 };
 
 // Start the database
