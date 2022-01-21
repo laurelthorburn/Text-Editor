@@ -118,9 +118,9 @@ No tests at this time
 
   <a name="picsection"></a>
   ## Screenshots
-  ![Screenshot of Text Editor Main Screen](./media/Screenshot1.png)
-  ![Screenshot of Text Editor with code](./media/Screenshot2.png)
-  ![Screenshot of Text Editor with install button pressed showed code can be downloaded](./media/Screenshot3.png)
+  ![Screenshot of Text Editor Main Screen](../media/Screenshot1.png)
+  ![Screenshot of Text Editor with code](../media/Screenshot2.png)
+  ![Screenshot of Text Editor with install button pressed showed code can be downloaded](../media/Screenshot3.png)
 
   <a name="linksection"></a>
   ## Links
